@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const exphbs = require('express-handlebars');
 
 const app = express();
@@ -10,6 +11,8 @@ const bookmark = require('./routes/bookmark');
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.get('/', (req, res) => {
   res.render('index');
 });
@@ -18,7 +21,7 @@ app.get('/about', (req, res) => {
   res.render('about');
 });
 
-app.use('/bookmark', bookmark);
+app.use('/bookmarks', bookmark);
 
 const port = 5000;
 
