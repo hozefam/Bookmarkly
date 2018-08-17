@@ -1,0 +1,22 @@
+{
+  "name": "bookmarkly",
+  "version": "1.0.0",
+  "description": "Bookmark app build in express/node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hozefam/Bookmarkly.git"
+  },
+  "author": "Hozefa Mangalorewala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hozefam/Bookmarkly/issues"
+  },
+  "homepage": "https://github.com/hozefam/Bookmarkly#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
